@@ -2,6 +2,7 @@ package com.example.appcarros;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -44,25 +45,94 @@ public class Conversor extends AppCompatActivity {
         sp1.setAdapter(valores);
         sp2.setAdapter(valores);
 
-        //aplicar codigo de erro aos eventos
-        sp1.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-            @Override
-            public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
-                switch (i) {
+
+    }
+
+    public void convertUni (View v){
+
+    int op1 = sp1.getSelectedItemPosition();
+    int op2 = sp2.getSelectedItemPosition();
+    double value =  Double.parseDouble(entry.getText().toString());
+
+
+        switch (op1) {
+            case 0:
+                switch (op2) {
                     case 0:
-
+                        result.setText(value + " Kg Força");
                         break;
-
+                    case 1:
+                        result.setText(value * 9.81 + " Joules/m");
+                        break;
+                    case 2:
+                        result.setText(value * 980665 + " Dyne");
+                        break;
+                    case 3:
+                        result.setText(value * 9.81 + " Newtons");
+                        break;
                 }
-            }
-            @Override
-            public void onNothingSelected(AdapterView<?> adapterView) {
+                break;
 
-            }
-        });
+            case 1:
+                switch (op2) {
+                    case 0:
+                        result.setText(value * 0.102 + " Kg Força");
+                        break;
+                    case 1:
+                        result.setText(value + " Joules/m");
+                        break;
+                    case 2:
+                        result.setText(value * 10000000 + " Dyne/cm3");
+                        break;
+                    case 3:
+                        result.setText(value * 1 + " Newtons/m");
+                        break;
+                }
+                break;
+
+            case 2:
+                switch (op2) {
+                    case 0:
+                        result.setText(value * 0.000001 + " Kg Força");
+                        break;
+                    case 1:
+                        result.setText(value * 0.00001 + " Joules/m");
+                        break;
+                    case 2:
+                        result.setText(value + " Dyne/cm3");
+                        break;
+                    case 3:
+                        result.setText(value * 0.00001 + " Newtons/m");
+                        break;
+                }
+                break;
+
+            case 3:
+                switch (op2) {
+                    case 0:
+                        result.setText(value * 0.102 + " Kg Força");
+                        break;
+                    case 1:
+                        result.setText(value * 1 + " Joules/m");
+                        break;
+                    case 2:
+                        result.setText(value * 100000 + " Dyne/cm3");
+                        break;
+                    case 3:
+                        result.setText(value + " Newtons/m");
+                        break;
+                }
+                break;
+
+        }
+    }
+
+    public void voltaAoMenu (View v) {
+        Intent it = new Intent(Conversor.this, Menu.class);
+        startActivity(it);
+        finish();
+    }
 
 
-
-            }
 
 }
