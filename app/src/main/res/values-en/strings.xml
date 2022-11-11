@@ -10,4 +10,8 @@
     <string name="btnPaises">Ver Paises</string>
     <string name="pLogo">Seleção de Pais</string>
     <string name="btnConv">Conversão</string>
+    <string name="viewTit">Conversor</string>
+    <string name="disp1">Unidade Inicial :</string>
+    <string name="disp2">Unidade Final :</string>
+    <string name="btnTconv">Converter</string>
 </resources>
