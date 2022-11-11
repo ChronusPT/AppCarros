@@ -29,4 +29,11 @@ public class Menu extends AppCompatActivity {
         finish();
 
     }
+
+    public void conversor(View v){
+        Intent it = new Intent(Menu.this,Conversor.class);
+        startActivity(it);
+        finish();
+
+    }
 }

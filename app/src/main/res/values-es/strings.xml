@@ -9,4 +9,5 @@
     <string name="btnvoltar">Voltar ao Menu</string>
     <string name="btnPaises">Ver Paises</string>
     <string name="pLogo">Seleção de Pais</string>
+    <string name="btnConv">Conversão</string>
 </resources>

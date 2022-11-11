@@ -18,12 +18,16 @@ public class verPaises extends AppCompatActivity {
     private String [] nomePaises = new String [] {"Portugal", "Japão", "Egipto", "Morioh"};
     private String [] areaPaises = new String [] {"92,212 km2 ", "377,975 km2", "1,010,408  km2", "786.307 km2"};
     private String [] popPaises = new String [] {"10,352,042 hab.", "124,214,766 hab.", "107,770,524 hab.", "58,713 hab."};
+    private String [] moedaPaises = new String [] {"Euro (€)", " yen (¥)", "Libra (E£)", "Dwang"};
+    private String [] capitalPaises = new String [] {"Lisboa","Tokyo", "Cairo", "N/A"};
     private int [] imagens = {R.drawable.portugal, R.drawable.japao, R.drawable.egipto, R.drawable.morioh};
 
     // Criar variaveis do tipo dos elementos existentes no xml.
     private ImageView imgPaises;
     private TextView areaP;
     private TextView popP;
+    private TextView moedaP;
+    private TextView capP;
     private Spinner sp;
 
     @Override
@@ -35,6 +39,8 @@ public class verPaises extends AppCompatActivity {
         imgPaises = findViewById(R.id.ctxImg2);
         areaP = findViewById(R.id.txtName);
         popP = findViewById(R.id.txtPop);
+        moedaP = findViewById(R.id.txMod);
+        capP = findViewById(R.id.txCap);
         sp = findViewById(R.id.ctxSpinnerA);
 
         // construir array adapter e carregar no spinner
@@ -51,6 +57,8 @@ public class verPaises extends AppCompatActivity {
                 imgPaises.setImageResource(imagens[i]);
                 areaP.setText("Área: "+areaPaises[i]);
                 popP.setText("População: "+popPaises[i]);
+                moedaP.setText("Moeda: "+moedaPaises[i]);
+                capP.setText("Capital: "+capitalPaises[i]);
                 Toast.makeText(verPaises.this, sp.getSelectedItem()+"",Toast.LENGTH_LONG).show();
             }
 

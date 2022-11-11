@@ -6,23 +6,45 @@
     android:layout_height="match_parent"
     tools:context=".verPaises">
 
+    <TextView
+        android:id="@+id/txCap"
+        android:layout_width="360dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="25dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txMod" />
+
+    <TextView
+        android:id="@+id/txMod"
+        android:layout_width="360dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="25dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtPop" />
+
     <Button
         android:id="@+id/button2"
         android:layout_width="360dp"
         android:layout_height="50dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="25dp"
         android:onClick="voltaAoMenu"
         android:text="@string/btnvoltar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.49"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtPop" />
+        app:layout_constraintTop_toBottomOf="@+id/txCap" />
 
     <TextView
         android:id="@+id/textView4"
         android:layout_width="360dp"
         android:layout_height="50dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="30dp"
         android:text="@string/pLogo"
         android:textAlignment="center"
         android:textSize="16pt"
@@ -34,7 +56,7 @@
         android:id="@+id/ctxSpinnerA"
         android:layout_width="350dp"
         android:layout_height="40dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="30dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
@@ -42,7 +64,7 @@
     <ImageView
         android:id="@+id/ctxImg2"
         android:layout_width="340dp"
-        android:layout_height="260dp"
+        android:layout_height="200dp"
         android:layout_marginTop="30dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.492"
@@ -54,7 +76,7 @@
         android:id="@+id/txtName"
         android:layout_width="360dp"
         android:layout_height="40dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="25dp"
         android:text="TextView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -64,7 +86,7 @@
         android:id="@+id/txtPop"
         android:layout_width="360dp"
         android:layout_height="40dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="25dp"
         android:text="TextView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.509"
