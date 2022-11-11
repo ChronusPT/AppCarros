@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AppCarros</string>
+    <string name="appname">"App Carros "</string>
+    <string name="menu">MENU</string>
+    <string name="menuOp1">Ver Carros Disponiveis</string>
+    <string name="menuOp4">SAIR</string>
+    <string name="menuOp">Ver Carros Disponiveis</string>
+    <string name="btnvoltar">Voltar ao Menu</string>
+    <string name="btnPaises">Ver Paises</string>
+    <string name="pLogo">Seleção de Pais</string>
+</resources>
